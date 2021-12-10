@@ -76,7 +76,7 @@ augroup myAutocmd
     autocmd BufWritePost ~/.vimrc source %
     autocmd BufWinEnter * if &buftype=="help" | wincmd L
     autocmd FileType vim,help setlocal keywordprg=:help
-
+    autocmd FileType gitcommit setlocal colorcolumn=72
     autocmd FileType * setlocal formatoptions-=cro
 augroup END
 
