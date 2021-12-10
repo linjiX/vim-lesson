@@ -104,6 +104,7 @@ Plug 'airblade/vim-gitgutter'
 
 " lesson 5
 Plug 'rbong/vim-flog', {'on': ['Flog', 'Flogsplit']}
+Plug 'tpope/vim-rhubarb'
 
 call plug#end()
 
