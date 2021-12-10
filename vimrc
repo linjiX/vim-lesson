@@ -199,6 +199,9 @@ nnoremap yrG :GitGutterBufferToggle<CR>
 let g:flog_permanent_default_arguments = {
             \   'date': 'short',
             \}
+augroup flog
+    autocmd FileType floggraph nnoremap <buffer> gb :<C-U>call flog#run_command("GBrowse %(h)")<CR>
+augroup END
 
 " GBrowse for phabricator
 function s:HomepageForUrl(url) abort
