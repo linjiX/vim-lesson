@@ -192,6 +192,13 @@ command! -nargs=? -complete=customlist,fugitive#CommitComplete Gca
 " airblade/vim-gitgutter
 let g:gitgutter_preview_win_floating = 1
 
+nnoremap <silent> <leader>gl :GitGutter<CR>
+nnoremap <silent> <leader>gF :GitGutterFold<CR>
+nnoremap <silent> <leader>gq :GitGutterQuickFix<CR>:belowright copen<CR>
+nmap <silent> <leader>gp <Plug>(GitGutterPreviewHunk)
+nmap <silent> <leader>ga <Plug>(GitGutterStageHunk)
+nmap <silent> <leader>gu <Plug>(GitGutterUndoHunk)
+
 omap ig <Plug>(GitGutterTextObjectInnerPending)
 omap ag <Plug>(GitGutterTextObjectOuterPending)
 xmap ig <Plug>(GitGutterTextObjectInnerVisual)
