@@ -110,6 +110,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'rbong/vim-flog', {'on': ['Flog', 'Flogsplit']}
 Plug 'tpope/vim-rhubarb'
 Plug 'rhysd/conflict-marker.vim'
+Plug 'rhysd/git-messenger.vim', {'on': ['<Plug>(git-messenger)', 'GitMessenger']}
 
 call plug#end()
 
@@ -302,3 +303,7 @@ nmap <leader>cj <Plug>(conflict-marker-themselves)
 nmap <leader>ck <Plug>(conflict-marker-ourselves)
 nmap <leader>cN <Plug>(conflict-marker-none)
 nmap <leader>cB <Plug>(conflict-marker-both)
+
+" rhysd/git-messenger.vim
+let g:git_messenger_no_default_mappings = 1
+nmap <leader>gm <Plug>(git-messenger)
