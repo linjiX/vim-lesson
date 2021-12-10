@@ -179,6 +179,12 @@ nmap <leader>0 <Plug>AirlineSelectTab0
 nnoremap gb :.GBrowse<CR>
 vnoremap gb :GBrowse<CR>
 
+command! -bar -bang Gst vertical botright Git<bang>
+command! -nargs=? -complete=customlist,fugitive#CommitComplete Gc
+            \ vertical botright Git commit -v <args>
+command! -nargs=? -complete=customlist,fugitive#CommitComplete Gca
+            \ vertical botright Git commit -v -a <args>
+
 " airblade/vim-gitgutter
 let g:gitgutter_preview_win_floating = 1
 
