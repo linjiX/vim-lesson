@@ -175,6 +175,10 @@ nmap <leader>8 <Plug>AirlineSelectTab8
 nmap <leader>9 <Plug>AirlineSelectTab9
 nmap <leader>0 <Plug>AirlineSelectTab0
 
+" tpope/vim-fugitive
+nnoremap gb :.GBrowse<CR>
+vnoremap gb :GBrowse<CR>
+
 " airblade/vim-gitgutter
 let g:gitgutter_preview_win_floating = 1
 
