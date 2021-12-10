@@ -37,6 +37,10 @@ set cindent
 
 set updatetime=10
 
+set colorcolumn=100
+set cursorline
+set cursorcolumn
+
 set noshowmode
 
 if has('macunix')
