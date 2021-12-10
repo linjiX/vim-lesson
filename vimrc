@@ -109,6 +109,7 @@ Plug 'airblade/vim-gitgutter'
 " lesson 5
 Plug 'rbong/vim-flog', {'on': ['Flog', 'Flogsplit']}
 Plug 'tpope/vim-rhubarb'
+Plug 'rhysd/conflict-marker.vim'
 
 call plug#end()
 
@@ -291,3 +292,13 @@ if index(g:fugitive_browse_handlers, function('s:FugitiveUrl')) == -1
     call insert(g:fugitive_browse_handlers, function('s:FugitiveUrl'))
 endif
 
+" rhysd/conflict-marker.vim
+let g:conflict_marker_enable_mappings = 0
+
+nmap ]k <Plug>(conflict-marker-next-hunk)
+nmap [k <Plug>(conflict-marker-prev-hunk)
+
+nmap <leader>cj <Plug>(conflict-marker-themselves)
+nmap <leader>ck <Plug>(conflict-marker-ourselves)
+nmap <leader>cN <Plug>(conflict-marker-none)
+nmap <leader>cB <Plug>(conflict-marker-both)
