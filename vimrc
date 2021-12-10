@@ -103,6 +103,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
 " lesson 5
+Plug 'rbong/vim-flog', {'on': ['Flog', 'Flogsplit']}
 
 call plug#end()
 
@@ -188,3 +189,8 @@ nnoremap yrg :GitGutterToggle<CR>
 nnoremap [rG :GitGutterBufferEnable<CR>
 nnoremap ]rG :GitGutterBufferDisable<CR>
 nnoremap yrG :GitGutterBufferToggle<CR>
+
+" rbong/vim-flog
+let g:flog_permanent_default_arguments = {
+            \   'date': 'short',
+            \}
